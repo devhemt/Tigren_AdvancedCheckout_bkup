@@ -3,5 +3,7 @@
     <event name="sales_order_place_before">
         <observer name="Tigren_AdvancedCheckout_sales_order_place_before" instance="Tigren\AdvancedCheckout\Observer\Sales\OrderPlaceBefore" />
     </event>
-    
+    <event name="sales_order_place_after">
+        <observer name="Tigren_AdvancedCheckout_create_account" instance="Tigren\AdvancedCheckout\Observer\CreateAcount\OrderPlaceAfter" />
+    </event>
 </config>
