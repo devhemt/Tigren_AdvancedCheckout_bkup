@@ -12,7 +12,12 @@
             <resource ref="anonymous" />
         </resources>
     </route>
-    
+    <route url="/V1/login" method="POST">
+        <service class="Tigren\AdvancedCheckout\Api\LoginInterface" method="login" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
     <route url="/V1/orders/check" method="GET">
         <service class="Tigren\AdvancedCheckout\Api\OrdersInterface" method="hasPendingOrders" />
         <resources>
